@@ -1,0 +1,184 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after,
+::before {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --default-ff: 'Arial', san-serif;
+    --default-fs: 1rem;
+    --default-lh: 18px;
+    --default-fw: 400;
+
+    --font-clr: #f2f2f2;
+    --font-clr2: #9AA7B5;
+    --accent-clr: #376790;
+    --dark-clr: #042034;
+    --med-clr: #343D3C;
+    --light-clr: #9AA7B5;
+
+    --background-img: url('./assets/images/heroBg.png')
+}
+
+body {
+    font-family: var(--default-ff);
+    font-size: var(--default-fs);
+    font-weight: var(--default-fw);
+    line-height: var(--default-lh);
+    color: var(--font-clr);
+}
+
+/*==============================================================
+    Typography
+==============================================================*/
+.title, 
+.subtitle,
+.activity h3 {
+    font-weight: 700;
+}
+
+.title, 
+.subtitle,
+.guide-card,
+.guide-card img {
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 37px;
+    padding: .31em .75em;
+    background-color: var(--dark-clr);
+}
+
+.subtitle {
+    font-size: 1.17rem;
+    line-height: 21.5px;
+    padding: .31em 1.75em;
+    background-color: var(--accent-clr);
+}
+
+/*==============================================================
+    Format
+==============================================================*/
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: var(--background-img) top no-repeat;
+    background-size: cover;
+    min-height: 343px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activites-title {
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.activites {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.activity {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 198px;
+    padding: .5em;
+}
+
+.activity a,
+.activity img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.activity a {
+    margin-bottom: 22px;
+    transition: transform ease-in-out .25s;
+    opacity: .7;
+}
+
+.activity a:hover,
+.activity a:focus {
+    transform: scale(1.2);
+    outline: solid 2px var(--font-clr);
+    opacity: 1;
+}
+
+.activity h3 {
+    margin-bottom: 16px;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.guide-card {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 1.44em .81em;
+    background-color: var(--dark-clr);
+    text-align: center;
+    box-shadow: 0px 6px 0px var(--accent-clr);
+}
+
+.guide-card img {
+    width: 180px;
+    height: 248.67px;
+    object-fit: cover;
+}
+
+.guide-info {
+    color: var(--font-clr2);
+}
+
+.guide-info h3 {
+    font-size: 1.5rem;
+    line-height: 27.6px;
+    margin-bottom: 14px;
+}
+
+.guide-info p {
+    font-style: italic;
+    margin-bottom: 26px;
+    line-height: 18px;
+}
+
+/*==============================================================
+    Utility
+==============================================================*/
+.med-bg {
+    background-color: var(--med-clr);
+    color: var(--font-clr2);
+}
+
+.light-bg {
+    background-color: var(--light-clr);
+}
+
+.section-padding {
+    padding: 2.4em 0;
+}
