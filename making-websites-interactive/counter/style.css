@@ -1,0 +1,105 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::before,
+::after {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --default-ff: 'Poppins', sans-serif;
+    --default-fs: 1rem;
+    --default-fw: 600;
+    
+    --font-color: #0D1B2A;
+    --accent-color: #f2f2f2;
+    --dark-alpha: rgba(0, 0, 0, .5);
+    --dark-gradient: linear-gradient(var(--dark-alpha), var(--dark-alpha));
+    --bg-image: url("./assets/images/dolphins.jpg") center no-repeat;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-gradient), var(--bg-image);
+    background-size: cover;
+}
+
+/*=============================================================================
+    Typography
+=============================================================================*/
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1, 
+h2 {
+    margin-bottom: .4em;
+}
+
+/*=============================================================================
+    Format
+=============================================================================*/
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    padding: 1em;
+    font-family: var(--default-ff);
+    font-size: var(--default-fs);
+    font-weight: 400;
+    color: var(--font-color);
+    border-radius: 10px;
+    background-color: rgba(119, 141, 169, .8);
+    border: solid 3px #0d1b2a;
+}
+
+.btn {
+    width: 80%;
+    color: #E0E1DD;
+    font-size: 1.2rem;
+    padding: .4em .8em;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #0D1B2A;
+    background-color: #E0E1DD;
+}
+
+.increment-btn {
+    background-color: #1B263B;
+}
+
+.save-btn {
+    background-color: #415A77;
+}
+
+.entrys {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn,
+.entrys {
+    width: 80%;
+}
