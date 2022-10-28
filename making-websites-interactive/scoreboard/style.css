@@ -1,0 +1,128 @@
+@import "./assets/fonts/fonts.css";
+@import "./utils.css";
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-gradient), var(--bg-img) center no-repeat;
+    background-size: cover;
+}
+
+/*======================================================
+    Typography
+======================================================*/
+.team-name,
+.period-name {
+    margin-bottom: 25px;
+}
+
+.team-name, 
+h3 {
+    color: var(--light-clr);
+}
+
+.foul-title {
+    font-size: inherit;
+}
+
+.foul-title,
+h3 {
+    margin-bottom: 12px;
+}
+
+/*======================================================
+    Format
+======================================================*/
+.scoreboard {
+    width: 700px;
+    font-family: var(--default-ff);
+    font-size: var(--default-fs);
+    font-weight: var(--default-fw);
+    line-height: var(--default-lh);
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .9);
+    border: solid 2px var(--med-clr);
+    border-radius: 10px;
+    color: var(--med-clr2);
+    text-align: center;
+}
+
+.large-box, 
+.med-box {
+    font-family: var(--accent-ff);
+    font-size: 5.7rem;
+    line-height: 127px;
+    background-color: var(--med-clr);
+    color: var(--accent-clr);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.med-box {
+    padding: 8px;
+}
+
+.time {
+    padding: 0 8px;
+}
+
+.controls {
+    margin-bottom: 12px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-family: var(--accent-ff);
+    font-size: 1.2rem;
+    padding: 8px;
+    background: transparent;
+    border: 3px solid var(--med-clr);
+    color: var(--accent-clr);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--accent-clr);
+    color: var(--med-clr);
+}
+
+.game-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+#start-timer {
+    margin-bottom: 1em;
+}
+
+.main-btn {
+    font-family: inherit;
+}
+
+.scoreboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 34px;
+}
+
+.scoreboard-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.scoreboard-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

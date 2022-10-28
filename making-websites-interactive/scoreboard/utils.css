@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after,
+::before {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --default-ff: Verdana, sans-serif;
+    --accent-ff: CursedTimer, sans-serif;
+    --default-fw: 700;
+    --default-fs: 1.5rem;
+    --default-lh: 35px;
+
+    --dark-alpha: rgba(0, 0, 0, .5);
+    --dark-gradient: linear-gradient(var(--dark-alpha), var(--dark-alpha));
+    --bg-img: url("./assets/images/basketball.jpg");
+
+    --light-clr: #F4F4F9;
+    --accent-clr: #B8DBD9;
+    --med-clr: #2F4550;
+    --med-clr2: #586F7C;
+    --dark: ;
+}

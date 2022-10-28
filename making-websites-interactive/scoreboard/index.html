@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <main class="scoreboard">
+        <div class="scoreboard-header">
+            <div class="team">
+                <h2 class="team-name">HOME</h2>
+                <span id="home-score" class="large-box">0</span>
+            </div>
+            <div class="period">
+                <h2 class="period-name">Period</h2>
+                <span id="game-period" class="med-box">0</span>
+            </div>
+            <div class="team">
+                <h2 class="team-name">GUEST</h2>
+                <span id="guest-score" class="large-box">0</span>
+            </div>
+        </div>
+        <div class="scoreboard-mid">
+            <div>
+                <h2 class="foul-title">FOULS</h2>
+                <span id="home-foul" class="med-box">0</span>
+            </div>
+            <div class="large-box time"><span id="minutes">48</span>:<span id="seconds">00</span></div>
+            <div>
+                <h2 class="foul-title">FOULS</h2>
+                <span id="guest-foul" class="med-box">0</span>
+            </div>
+        </div>
+        <div class="scoreboard-controls">
+            <div>
+                <div class="controls">
+                    <h3>Home Score</h3>
+                    <div class="buttons">
+                        <button onclick="addTo('home','score', 1)">+1</button>
+                        <button onclick="addTo('home','score', 2)">+2</button>
+                        <button onclick="addTo('home','score', 3)">+3</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <h3>Home Fouls</h3>
+                    <div class="buttons">
+                        <button onclick="addTo('home','foul', 1)">+1</button>
+                        <button onclick="addTo('home','foul', 2)">+2</button>
+                        <button onclick="addTo('home','foul', 3)">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="game-btns">
+                <button id="start-timer" class="main-btn">Start Game</button>
+                <button id="new-game" class="main-btn">New Game</button>
+            </div>
+            <div>
+                <div class="controls">
+                    <h3>Guest Score</h3>
+                    <div class="buttons">
+                        <button onclick="addTo('guest','score', 1)">+1</button>
+                        <button onclick="addTo('guest','score', 2)">+2</button>
+                        <button onclick="addTo('guest','score', 3)">+3</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <h3>Guest Fouls</h3>
+                    <div class="buttons">
+                        <button onclick="addTo('guest','foul', 1)">+1</button>
+                        <button onclick="addTo('guest','foul', 2)">+2</button>
+                        <button onclick="addTo('guest','foul', 3)">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
