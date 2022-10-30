@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="module" src="./main.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <main>
+        <div class="titles">
+            <h2>Generate a <br>
+                <span class="accent-clr">random password</span>
+            </h2>
+            <p class="subtitle">Never use an insecure password again.</p>
+        </div>
+        <form class="controls">
+            <label class="input-container checkbox-container" for="special-chars">Numbers and Symbols:
+                <input id="special-chars" class="checkbox-container" type="checkbox" checked>
+                <span class="custom-checkmark"></span>
+            </label>
+            <label class="input-container" for="password-length">Password Length:
+                <input id="password-length" type="number" min="15" placeholder="15" value="15">
+            </label>
+            <span class="error"></span>
+            <button id="generate-btn" class="btn generate-btn">Generate passwords</button>
+        </form>
+        <hr>
+        <div class="results">
+            <div class="password-container">
+                <span id="password1" class="password"></span>
+            </div>
+            <div class="password-container">
+                <span id="password2" class="password"></span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

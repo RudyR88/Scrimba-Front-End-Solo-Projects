@@ -1,0 +1,185 @@
+@import "./util.css";
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-gradient), var(--bg-img) center no-repeat;
+    background-size: cover;
+}
+
+/*============================================================================
+    Typography
+=============================================================================*/
+h2 {
+    font-family: var(--accent-ff);
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--med-clr); 
+}
+
+.error {
+    display: block;
+    font-style: italic;
+    font-size: .8rem;
+    margin: 1em 0;
+    color: var(--accent-clr);
+}
+
+/*============================================================================
+    Format
+=============================================================================*/
+
+main {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 52px;
+    background: var(--dark-gradient2);
+    border-radius: 10px;
+    font-family: var(--default-ff);
+    font-size: var(--default-fs);
+    font-weight: var(--default-fw);
+    color: var(--light-clr);
+    box-shadow: 1px 1px 1px var(--accent-clr);
+}
+
+.titles{
+    margin-bottom: 47px;
+}
+
+.input-container {
+    display: block;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container + .input-container {
+    margin-top: 19px;
+}
+
+input[type=checkbox]{
+    opacity: 0;
+}
+
+.checkbox-container {
+    position: relative;
+}
+
+.custom-checkmark {
+    position: absolute;
+    right: 0;
+    width: 23px;
+    height: 23px;
+    background-color: var(--dark-clr);
+    border-radius: 5px;
+    transition: background-color .25s ease-in-out;
+}
+
+.custom-checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .custom-checkmark::after {
+    display: block;
+}
+
+.custom-checkmark::after{
+    width: 5px;
+    left: 50%;
+    margin-left: -2.5px;
+    top: 50%;
+    margin-top: -5px;
+    height: 10px;
+    border: solid var(--accent-clr);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#password-length {
+    background-color: var(--dark-clr);
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+    color: var(--accent-clr);
+    border: none;
+    border-radius: 5px;
+    padding: .1em;
+    width: 45px;
+    -moz-appearance: textfield;
+}
+
+input:focus + .custom-checkmark,
+#password-length:focus,
+.btn:focus{
+    outline: solid 2px var(--accent-clr);
+    border: none;
+}
+
+#password-length::-webkit-outer-spin-button,
+#password-length::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+    font-family: var(--accent-ff);
+    font-size: inherit;
+    background-color: var(--accent-clr);
+    color: var(--dark-clr2);
+    border: none;
+    padding: .56em 1.06em;
+    border-radius: 5px;
+    transition: background-color, transform .25s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--light-clr);
+    transform: scale(1.1);
+
+}
+
+.generate-btn {
+    margin-top: 38px;
+}
+
+hr {
+    width: 100%;
+    margin-top: 58px;
+    margin-bottom: 32px;
+}
+
+.password-container {
+    text-align: center;
+    word-wrap: break-word;
+    min-height: 36px;
+    border-radius: 6px;
+    background-color: var(--dark-clr2);
+    padding: .5em;
+}
+
+.password-container + .password-container{
+    margin-top: 1em;
+}
+
+.password {
+    height: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    color: var(--accent-clr); 
+}
