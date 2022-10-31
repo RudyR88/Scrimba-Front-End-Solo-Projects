@@ -1,0 +1,31 @@
+@use '../util' as u;
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(u.toRem(20), u.toRem(16) + 2vw, u.toRem(30));
+    margin-bottom: u.toRem(12);
+}
+
+h2 {
+    font-size: clamp(u.toRem(40), u.toRem(16) + 2vw, u.toRem(64));
+    margin-bottom: u.toRem(30);
+}
+
+h1, 
+h2 {
+    margin-bottom: .4em;
+}
+
+.default-text {
+    font-family: var(--default-ff);
+    font-size: var(--default-fs);
+    font-weight: 700;
+}
+
+.btn-text{
+    font-size: clamp(0.9375rem, 1rem + 1.5vw, 1.25rem);
+    font-weight: 500;
+}

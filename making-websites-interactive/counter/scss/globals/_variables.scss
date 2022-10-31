@@ -1,0 +1,20 @@
+:root {
+    --default-ff: 'Poppins', sans-serif;
+    --default-fs: 1rem;
+    --default-fw: 600;
+
+    --light-clr: #F5F5F5;
+    --light-clr2: #DAE1E7;
+    --accent-clr: #156993;
+    --med-clr: #01559A;
+    --med-clr2: #053468;
+    --dark-clr: #212227;
+    --gradient-clr: rgba(10, 62, 121, 0.8);
+    --gradient-clr2: rgba(2, 20, 35, 0.8);
+    --dark-alpha: rgba(0, 0, 0, .65);
+
+    --bg-gradient: linear-gradient(139.74deg, var(--gradient-clr), var(--gradient-clr2) 100%);
+    --dark-gradient: linear-gradient(var(--dark-alpha), var(--dark-alpha));
+    
+    --bg-image: url('/making-websites-interactive/counter/assets/images/dolphins.jpg') right no-repeat;
+}

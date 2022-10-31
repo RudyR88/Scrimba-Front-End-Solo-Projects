@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="./js/main.js" type="module"></script>
+    <title>Dolphin Counter</title>
 </head>
-<body>
-    <main class="counter">
+<body class="flex-centered">
+    <main class="counter default-text flex-centered-column">
         <h1>Dolphin Counter</h1>
         <h2 id="counted"></h2>
-        <button class="btn increment-btn">Increment</button>
-        <button class="btn save-btn">Save</button>
-        <button class="btn reset-btn">Reset</button>
+        <button class="btn btn-text btn__increment">Increment</button>
+        <button class="btn btn-text btn__save">Save</button>
+        <button class="btn btn-text btn__reset">Reset</button>
         <div class="entrys">
             <h3>Previous entries: <span id="saved-entrys"></span></h3> 
         </div>
     </main>
-    <script src="./main.js" type="module"></script>
 </body>
 </html>

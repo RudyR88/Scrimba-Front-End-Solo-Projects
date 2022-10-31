@@ -1,0 +1,50 @@
+@forward './globals';
+@forward './layouts';
+@use './util' as u;
+
+.counter {
+    width: min(80%, u.toRem(442));
+    padding: u.toEm(30) u.toEm(43);
+    color: var(--light-clr);
+    border-radius: 10px;
+    background: var(--bg-gradient);
+    box-shadow: 1px 1px 1px var(--accent-clr);
+
+    .btn{
+        width: 80%;
+        color: var(--light-clr2);
+        padding: u.toRem(10) u.toRem(30);
+        border-radius: 5px;
+        border: none;
+        margin-bottom: u.toRem(16);
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: var(--dark-clr);
+            background-color: var(--light-clr);
+        }
+
+        &__increment{
+            background-color: var(--med-clr);
+        }
+
+        &__save{
+            background-color: var(--accent-clr);
+        }
+
+        &__reset{
+            background-color: var(--med-clr2);
+        }
+    }
+
+    .entrys {
+        overflow-wrap: break-word;
+    }
+
+    .btn,
+    .entrys {
+        width: min(80%, u.toRem(284));
+    }
+}
