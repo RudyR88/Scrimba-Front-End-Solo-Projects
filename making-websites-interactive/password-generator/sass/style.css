@@ -1,0 +1,222 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--dark-gradient), var(--bg-image);
+  background-size: cover;
+}
+
+.accent-clr {
+  color: var(--accent-clr);
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+.default-text {
+  font-family: var(--default-ff);
+  font-size: var(--default-fs);
+  font-weight: var(--default-fw);
+}
+
+h2 {
+  font-family: var(--accent-ff);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: clamp(1.5rem, 4vw, 2.5rem);
+  letter-spacing: 0.025em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  color: var(--med-clr);
+  margin-bottom: 0;
+}
+
+.btn-text {
+  font-family: var(--accent-ff);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  padding: 0.56em 1.06em;
+  color: var(--dark-clr2);
+}
+
+.input-text {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.error-text {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--accent-clr);
+}
+
+:root {
+  --default-ff: "Inter", sans-serif;
+  --accent-ff: "Karla", sans-serif;
+  --default-fw: 400;
+  --default-fs: 1rem;
+  --default-lh: 29px;
+  --light-clr: #fff;
+  --med-clr: #D5D4D8;
+  --dark-clr: #293241;
+  --dark-clr2: #1b202b;
+  --dark-alpha: rgba(0, 0, 0, .6);
+  --accent-clr: #EE6C4D;
+  --accent-clr2: #3D5A80;
+  --dark-gradient: linear-gradient(var(--dark-alpha), var(--dark-alpha));
+  --dark-gradient2: linear-gradient(138.78deg, var(--dark-clr) 0%, var(--accent-clr2) 100%);
+  --bg-img: url("./assets/images/password-bg.jpg");
+}
+
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: min(80%, 28.125rem);
+  display: flex;
+  flex-direction: column;
+  padding: 5.3125rem 2.1875rem;
+  background: var(--dark-gradient2);
+  border-radius: 10px;
+  color: var(--light-clr);
+  box-shadow: 1px 1px 1px var(--accent-clr);
+}
+main .titles {
+  margin-bottom: 2.9375rem;
+}
+main .controls .input-container {
+  width: 80%;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 43.75em) {
+  main .controls .input-container {
+    width: 85%;
+  }
+}
+main .controls .input-container + .input-container {
+  margin-top: 1.1875rem;
+}
+main .controls input[type=checkbox] {
+  opacity: 0;
+}
+main .controls .checkbox-container {
+  position: relative;
+}
+main .controls .custom-checkmark {
+  position: absolute;
+  right: 0;
+  width: 1.4375rem;
+  height: 1.4375rem;
+  background-color: var(--dark-clr);
+  border-radius: 5px;
+  transition: background-color 0.25s ease-in-out;
+}
+main .controls .custom-checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+main .controls input[type=checkbox]:checked ~ .custom-checkmark::after {
+  display: block;
+}
+main .controls .custom-checkmark::after {
+  width: 0.3125rem;
+  left: 50%;
+  margin-left: -2.5px;
+  top: 50%;
+  margin-top: -5px;
+  height: 10px;
+  border: solid var(--accent-clr);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+main .controls #password-length {
+  background-color: var(--dark-clr);
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+  color: var(--accent-clr);
+  border: none;
+  border-radius: 5px;
+  padding: 0.1rem;
+  width: 45px;
+  -moz-appearance: textfield;
+}
+main .controls #password-length::-webkit-outer-spin-button, main .controls #password-length::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main .controls .btn {
+  background-color: var(--accent-clr);
+  border: none;
+  padding: 0.56rem 1.06rem;
+  border-radius: 5px;
+  transition: background-color, transform 0.25s ease-in-out;
+}
+main .controls .btn:hover, main .controls .btn:focus {
+  background-color: var(--light-clr);
+  transform: scale(1.1);
+}
+main .controls .btn__generate {
+  margin-top: 38px;
+}
+main .controls input:focus + .custom-checkmark,
+main .controls #password-length:focus,
+main .controls .btn:focus {
+  outline: solid 2px var(--accent-clr);
+  border: none;
+}
+main hr {
+  width: 100%;
+  margin-top: 58px;
+  margin-bottom: 32px;
+}
+main .results .password-container {
+  text-align: center;
+  word-wrap: break-word;
+  min-height: 36px;
+  border-radius: 6px;
+  background-color: var(--dark-clr2);
+  padding: 0.5em;
+}
+main .results .password-container .password {
+  height: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  color: var(--accent-clr);
+}
+main .results .password-container + .password-container {
+  margin-top: 1em;
+}/*# sourceMappingURL=style.css.map */

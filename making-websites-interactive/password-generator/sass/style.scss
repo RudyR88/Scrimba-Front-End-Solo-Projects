@@ -1,0 +1,147 @@
+@use './globals';
+@use './layout';
+@use './util' as u;
+
+main {
+    width: min(80%, u.toRem(450));
+    display: flex;
+    flex-direction: column;
+    padding: u.toRem(85) u.toRem(35);
+    background: var(--dark-gradient2);
+    border-radius: 10px;
+    color: var(--light-clr);
+    box-shadow: 1px 1px 1px var(--accent-clr);
+
+    .titles{
+        margin-bottom: u.toRem(47);
+    }
+
+    .controls {
+        .input-container {
+            width: 80%;
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            @include u.breakpoint('medium'){
+                width: 85%;
+            }
+        }
+        
+        .input-container + .input-container {
+            margin-top: u.toRem(19);
+        }
+        
+        input[type=checkbox]{
+            opacity: 0;
+        }
+        
+        .checkbox-container {
+            position: relative;
+        }
+        
+        .custom-checkmark {
+            position: absolute;
+            right: 0;
+            width: u.toRem(23);
+            height: u.toRem(23);
+            background-color: var(--dark-clr);
+            border-radius: 5px;
+            transition: background-color .25s ease-in-out;
+        }
+        
+        .custom-checkmark::after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        
+        input[type=checkbox]:checked ~ .custom-checkmark::after {
+            display: block;
+        }
+        
+        .custom-checkmark::after{
+            width: u.toRem(5);
+            left: 50%;
+            margin-left: -2.5px;
+            top: 50%;
+            margin-top: -5px;
+            height: 10px;
+            border: solid var(--accent-clr);
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        
+        #password-length {
+            background-color: var(--dark-clr);
+            font-size: inherit;
+            font-family: inherit;
+            text-align: center;
+            color: var(--accent-clr);
+            border: none;
+            border-radius: 5px;
+            padding: u.toRem(1.6);
+            width: 45px;
+            -moz-appearance: textfield;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        
+        .btn {
+            background-color: var(--accent-clr);
+            border: none;
+            padding: u.toRem(8.96) u.toRem(16.96);
+            border-radius: 5px;
+            transition: background-color, transform .25s ease-in-out;
+
+            &:hover, &:focus{
+                background-color: var(--light-clr);
+                transform: scale(1.1);
+            }
+
+            &__generate {
+                margin-top: 38px;
+            }
+        }
+
+        input:focus + .custom-checkmark,
+        #password-length:focus,
+        .btn:focus{
+            outline: solid 2px var(--accent-clr);
+            border: none;
+        }
+    }
+
+    hr {
+        width: 100%;
+        margin-top: 58px;
+        margin-bottom: 32px;
+    }
+
+    .results {
+        .password-container {
+            text-align: center;
+            word-wrap: break-word;
+            min-height: 36px;
+            border-radius: 6px;
+            background-color: var(--dark-clr2);
+            padding: .5em;
+
+            .password {
+                height: inherit;
+                line-height: inherit;
+                font-size: inherit;
+                color: var(--accent-clr); 
+            }
+        }
+        
+        .password-container + .password-container{
+            margin-top: 1em;
+        }
+    }
+}

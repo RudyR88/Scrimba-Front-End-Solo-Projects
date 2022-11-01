@@ -1,0 +1,45 @@
+@use '../util' as u;
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+.default-text {
+    font-family: var(--default-ff);
+    font-size: var(--default-fs);
+    font-weight: var(--default-fw);
+}
+
+h2 {
+    font-family: var(--accent-ff);
+    font-weight: 800;
+    font-size: clamp(u.toRem(24), 4vw, u.toRem(40));
+    line-height: clamp(u.toRem(24), 4vw, u.toRem(40));
+    letter-spacing: 0.025em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: clamp(u.toRem(14), 2vw, u.toRem(18));
+    color: var(--med-clr);
+    margin-bottom: 0;
+}
+
+.btn-text {
+    font-family: var(--accent-ff);
+    font-size: clamp(u.toRem(14), 2vw, u.toRem(16));
+    padding: .56em 1.06em;
+    color: var(--dark-clr2);
+}
+
+.input-text {
+    font-size: clamp(u.toRem(16), 2vw, u.toRem(20));
+}
+
+.error-text {
+    display: block;
+    margin-top: u.toRem(8);
+    font-style: italic;
+    font-size: .8rem;
+    color: var(--accent-clr);
+}
