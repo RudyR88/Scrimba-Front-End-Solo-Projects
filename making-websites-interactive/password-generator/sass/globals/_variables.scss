@@ -14,5 +14,5 @@
     --accent-clr2: #3D5A80;
     --dark-gradient: linear-gradient(var(--dark-alpha), var(--dark-alpha));
     --dark-gradient2: linear-gradient(138.78deg, var(--dark-clr) 0%, var(--accent-clr2) 100%);
-    --bg-img: url('./assets/images/password-bg.jpg');
+    --bg-img: url('./assets/images/password-bg.jpg') center no-repeat;
 }
