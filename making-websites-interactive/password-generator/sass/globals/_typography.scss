@@ -36,7 +36,7 @@ h2 {
     font-size: clamp(u.toRem(16), 2vw, u.toRem(20));
 }
 
-.error-text {
+.msg {
     display: block;
     margin-top: u.toRem(8);
     font-style: italic;

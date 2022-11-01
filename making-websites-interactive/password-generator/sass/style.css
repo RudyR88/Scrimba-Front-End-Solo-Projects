@@ -57,7 +57,7 @@ h2 {
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
-.error-text {
+.msg {
   display: block;
   margin-top: 0.5rem;
   font-style: italic;
@@ -190,7 +190,7 @@ main .controls .btn:hover, main .controls .btn:focus {
   transform: scale(1.1);
 }
 main .controls .btn__generate {
-  margin-top: 38px;
+  margin-top: 2.375rem;
 }
 main .controls input:focus + .custom-checkmark,
 main .controls #password-length:focus,
@@ -200,16 +200,21 @@ main .controls .btn:focus {
 }
 main hr {
   width: 100%;
-  margin-top: 58px;
-  margin-bottom: 32px;
+  margin-top: 3.625rem;
+  margin-bottom: 2rem;
 }
 main .results .password-container {
   text-align: center;
   word-wrap: break-word;
-  min-height: 36px;
+  cursor: pointer;
+  min-height: 2.25rem;
   border-radius: 6px;
   background-color: var(--dark-clr2);
   padding: 0.5em;
+}
+main .results .password-container:focus {
+  outline: solid 2px var(--accent-clr);
+  border: none;
 }
 main .results .password-container .password {
   height: inherit;
@@ -218,5 +223,5 @@ main .results .password-container .password {
   color: var(--accent-clr);
 }
 main .results .password-container + .password-container {
-  margin-top: 1em;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

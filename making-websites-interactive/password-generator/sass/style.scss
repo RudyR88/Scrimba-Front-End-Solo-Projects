@@ -105,13 +105,13 @@ main {
             }
 
             &__generate {
-                margin-top: 38px;
+                margin-top: u.toRem(38);
             }
         }
 
         input:focus + .custom-checkmark,
         #password-length:focus,
-        .btn:focus{
+        .btn:focus {
             outline: solid 2px var(--accent-clr);
             border: none;
         }
@@ -119,19 +119,25 @@ main {
 
     hr {
         width: 100%;
-        margin-top: 58px;
-        margin-bottom: 32px;
+        margin-top: u.toRem(58);
+        margin-bottom: u.toRem(32);
     }
 
-    .results {
+    .results{
         .password-container {
             text-align: center;
             word-wrap: break-word;
-            min-height: 36px;
+            cursor: pointer;
+            min-height: u.toRem(36);
             border-radius: 6px;
             background-color: var(--dark-clr2);
-            padding: .5em;
-
+            padding: u.toEm(8);
+    
+            &:focus{
+                outline: solid 2px var(--accent-clr);
+                border: none;
+            }
+    
             .password {
                 height: inherit;
                 line-height: inherit;
@@ -139,9 +145,9 @@ main {
                 color: var(--accent-clr); 
             }
         }
-        
+    
         .password-container + .password-container{
-            margin-top: 1em;
+            margin-top: u.toRem(16);
         }
     }
 }
