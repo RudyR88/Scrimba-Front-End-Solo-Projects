@@ -42,7 +42,19 @@ main {
             border: none;
             border-radius: 5px;
             padding: u.toRem(9) u.toRem(27);
+            transition: transform .3s ease-in-out;
+
+            &:hover, &:focus {
+                color: var(--accent-clr);
+                background-color: var(--gradient-clr2);
+                transform: scale(1.2);
+            }
+
         }
+    }
+
+    #number:focus, .btn:focus {
+        outline: solid 2px var(--light-clr);
     }
 
     .units {

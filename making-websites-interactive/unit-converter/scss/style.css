@@ -123,6 +123,15 @@ main .heading .btn {
   border: none;
   border-radius: 5px;
   padding: 0.5625rem 1.6875rem;
+  transition: transform 0.3s ease-in-out;
+}
+main .heading .btn:hover, main .heading .btn:focus {
+  color: var(--accent-clr);
+  background-color: var(--gradient-clr2);
+  transform: scale(1.2);
+}
+main #number:focus, main .btn:focus {
+  outline: solid 2px var(--light-clr);
 }
 main .units {
   padding: 2.25rem 1.5625rem;
