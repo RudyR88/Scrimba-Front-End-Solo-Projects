@@ -102,7 +102,7 @@ h2 {
 }
 
 main {
-  width: min(80%, 28.125rem);
+  width: min(95%, 28.125rem);
   display: flex;
   flex-direction: column;
   padding: 5.3125rem 2.1875rem;

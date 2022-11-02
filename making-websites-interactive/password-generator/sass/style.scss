@@ -3,7 +3,7 @@
 @use './util' as u;
 
 main {
-    width: min(80%, u.toRem(450));
+    width: min(95%, u.toRem(450));
     display: flex;
     flex-direction: column;
     padding: u.toRem(85) u.toRem(35);
