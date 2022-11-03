@@ -1,0 +1,26 @@
+@use './functions' as f;
+@use './breakpoints' as b;
+
+.light-bg {
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.light-bg, .light-bg2 {
+    background-color: var(--light-clr);
+}
+
+.container {
+    width: min(100%, f.toRem(800));
+    margin: 0 auto;
+}
+
+.user-profile {
+    width: f.toRem(34);
+    height: f.toRem(34);
+    object-fit: cover;
+    border-radius: 50%;
+    @include b.breakpoint(medium){
+        width: f.toRem(43);
+        height: f.toRem(43);
+    }
+}

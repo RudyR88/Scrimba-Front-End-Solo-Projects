@@ -1,0 +1,157 @@
+.light-bg {
+  border-bottom: 1px solid #C6C6C6;
+}
+
+.light-bg, .light-bg2 {
+  background-color: var(--light-clr);
+}
+
+.container {
+  width: min(100%, 50rem);
+  margin: 0 auto;
+}
+
+.user-profile {
+  width: 2.125rem;
+  height: 2.125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+@media (min-width: 43.75em) {
+  .user-profile {
+    width: 2.6875rem;
+    height: 2.6875rem;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--dark-clr2);
+  background-size: cover;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+.default-text {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: clamp(0.8125rem, 2vw, 1rem);
+  line-height: 1rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.location {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  line-height: 15px;
+}
+
+h2, .likes {
+  font-weight: 700;
+  line-height: 1.02125rem;
+}
+
+:root {
+  --primary-font: "Source Sans Pro", sans-serif;
+  --light-clr: #FFF;
+  --light-clr2: #EDEDED;
+  --med-clr: #C6C6C6;
+  --dark-clr: #000;
+  --dark-clr2: #252525;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-row-gap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem 0.9375rem;
+}
+header .logo {
+  width: 7.9375rem;
+}
+
+main .posts-container {
+  background-color: var(--med-clr);
+}
+main .post + .post {
+  margin-top: 1.5625rem;
+}
+main .post {
+  background-color: var(--light-clr);
+}
+main .post__header {
+  padding: 0.625rem;
+}
+main .post__img {
+  align-self: center;
+  width: 100%;
+  max-width: 50rem;
+}
+main .post__about {
+  padding: 1.3125rem 0.625rem 1rem 0.625rem;
+}
+main .post__about .controls {
+  width: 6.5rem;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 43.75em) {
+  main .post__about .controls {
+    width: 9.375rem;
+  }
+}
+main .post__about .controls__icon {
+  width: 1.4375rem;
+  height: auto;
+  cursor: pointer;
+}
+main .post__about .controls__icon:hover {
+  filter: contrast(20%);
+}
+@media (min-width: 43.75em) {
+  main .post__about .controls__icon {
+    width: 1.875rem;
+    height: auto;
+  }
+}
+main .post__about .likes {
+  display: block;
+  margin-bottom: 0.75rem;
+}/*# sourceMappingURL=style.css.map */

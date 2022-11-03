@@ -1,0 +1,67 @@
+@forward './globals';
+@forward './layout';
+@use './util' as u;
+
+header {
+    padding: u.toRem(16) u.toRem(15);
+
+    .logo {
+        width: u.toRem(127);
+    }
+}
+
+main {
+    .posts-container{
+        background-color: var(--med-clr);
+    }
+
+    .post + .post {
+        margin-top: u.toRem(25);
+    }
+
+    .post {
+        background-color: var(--light-clr);
+
+        &__header {
+            padding: u.toRem(10);
+        }
+
+        &__img {
+            align-self: center;
+            width: 100%;
+            max-width: u.toRem(800);
+        }
+
+        &__about{
+            padding: u.toRem(21) u.toRem(10) u.toRem(16) u.toRem(10);
+            .controls {
+                width: u.toRem(104);
+                margin-bottom: u.toRem(12);
+                @include u.breakpoint('medium'){
+                    width: u.toRem(150);
+                }
+
+                &__icon {
+                    width: u.toRem(23);
+                    height: auto;
+                    cursor: pointer;
+
+                    &:hover{
+                        filter: contrast(20%);
+                    }
+
+                    @include u.breakpoint('medium'){
+                        width: u.toRem(30);
+                        height: auto;
+                    }
+                }
+            }
+
+            .likes {
+                display: block;
+                margin-bottom: u.toRem(12);
+            }
+        }
+
+    }
+}
