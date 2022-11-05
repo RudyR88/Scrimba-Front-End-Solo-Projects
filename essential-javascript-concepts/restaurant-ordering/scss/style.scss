@@ -3,7 +3,7 @@
 @use './util' as u;
 
 .hero-bg {
-    background: url('./assets/images/hero-bg.jpg') center 70% no-repeat;
+    background: url('../assets/images/hero-bg.jpg') center 70% no-repeat;
     background-size: cover;
     min-height: u.toRem(167);
     padding: u.toRem(46);
