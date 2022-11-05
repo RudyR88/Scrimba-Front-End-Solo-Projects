@@ -41,7 +41,6 @@ body {
   padding: 0;
   min-height: 100vh;
   background: var(--dark-clr2);
-  background-size: cover;
 }
 
 h1, h2, h3, p {

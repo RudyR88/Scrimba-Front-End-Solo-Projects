@@ -1,0 +1,72 @@
+@use '../util/' as u;
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+.default-text {
+    font-family: var(--primary-font);
+    font-size: clamp(u.toRem(16), 2vw, u.toRem(21));
+    font-weight: 400;
+    line-height: u.toRem(17);
+    color: var(--dark-clr);
+}
+
+h1 {
+    font-size: clamp(u.toRem(30), 2vw, u.toRem(35));
+    font-weight: inherit;
+}
+
+h2, h3, h4, h5 {
+    font-size: clamp(u.toRem(28), 2vw, u.toRem(33));
+    font-weight: inherit;
+    line-height: u.toRem(16.8);
+}
+
+h6 {
+    font-size: clamp(u.toRem(24), 2vw, u.toRem(29));
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: clamp(u.toRem(18), 2vw, u.toRem(23));
+    font-weight: inherit;
+    margin-bottom: 0;
+}
+
+.ingredients, .msg { 
+    color: var(--med-clr);
+    font-size: clamp(u.toRem(16), 2vw, u.toRem(21));
+    margin-bottom: u.toRem(8);
+}
+
+.msg {
+    margin: u.toRem(16);
+    text-align: center;
+}
+
+.price {
+    display: block;
+}
+
+.btn-text {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: inherit;
+}
+
+.input-text {
+    line-height: u.toRem(31.12);
+}
+
+.price, .input-text {
+    font-size: clamp(u.toRem(20), 2vw, u.toRem(25));
+}
+
+.btn-text, h6, .input-text {
+    font-family: var(--secondary-font);
+}
+
+h1, h4, h6, .ingredients, .btn-text, .remove-btn-text{
+    line-height: u.toRem(24);
+}

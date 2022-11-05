@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+    <script type="module" src="./js/main.js"></script>
+    <title>Restaurant Ordering</title>
+</head>
+<body class="default-text">
+    <section class="hero-bg flex-align-row">
+        <header class="header-container">
+            <h1>Jimmy's Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+    </section>
+    <main class="container">
+        <div class="menu"></div>
+        <div class="order-summary flex-column">
+            <h3>Your order</h3>
+            <div class="order"></div>
+            <hr>
+            <h4 class="flex-between">Total price: <span id="total" class="price"></span></h4>
+            <button id="order" class="btn btn-text">Complete order</button>
+        </div>
+        <div class="modal">
+            <div class='flex-column'>
+                <h6>Enter card details</h6>
+                <form>
+                    <input id="name" type="text" aria-label="enter your name" placeholder="Enter your name" required><br>
+                    <input id="card" type="tel" aria-label="credit card number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="Enter card number" required><br>
+                    <input id="cvv" type="tel" aria-label="credit card cvv" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="Enter CVV" required>
+                    <button type="submit" id="pay" class='btn btn-text'>Pay</button>
+                </form>
+                <span id='msg' class="msg"></span>
+            </div>
+        </div>
+        <div class="complete"></div>
+    </main>
+</body>
+</html>
