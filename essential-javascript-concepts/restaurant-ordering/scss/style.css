@@ -215,7 +215,7 @@ h1, h4, h6, .ingredients, .btn-text, .remove-btn-text {
 }
 
 .hero-bg {
-  background: url("./assets/images/hero-bg.jpg") center 70% no-repeat;
+  background: url("../assets/images/hero-bg.jpg") center 70% no-repeat;
   background-size: cover;
   min-height: 10.4375rem;
   padding: 2.875rem;
