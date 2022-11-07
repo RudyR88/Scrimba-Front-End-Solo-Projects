@@ -30,7 +30,7 @@ main {
             border-radius: 15px;
 
             @include u.breakpoint('large'){
-                min-height: u.toRem(851);
+                min-height: u.toRem(710);
             }
         }
 
@@ -57,7 +57,7 @@ main {
         border-radius: 15px;
 
         @include u.breakpoint('large'){
-            min-height: u.toRem(851);
+            min-height: u.toRem(710);
         }
     }
 
@@ -69,8 +69,8 @@ main {
         transform: rotate(-30deg);
 
         @include u.breakpoint('medium') {
-            top: 80px;
-            left: 45px;
+            top: 75px;
+            left: 40px;
         }
     }
 

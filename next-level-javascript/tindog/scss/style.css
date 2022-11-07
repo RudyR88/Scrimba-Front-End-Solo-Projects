@@ -91,7 +91,7 @@ main #dogProfile__bg {
 }
 @media (min-width: 56.25em) {
   main #dogProfile__bg {
-    min-height: 53.1875rem;
+    min-height: 44.375rem;
   }
 }
 main #dogProfile__bio {
@@ -115,7 +115,7 @@ main .endMessage {
 }
 @media (min-width: 56.25em) {
   main .endMessage {
-    min-height: 53.1875rem;
+    min-height: 44.375rem;
   }
 }
 main .descisionBadge {
@@ -127,8 +127,8 @@ main .descisionBadge {
 }
 @media (min-width: 43.75em) {
   main .descisionBadge {
-    top: 80px;
-    left: 45px;
+    top: 75px;
+    left: 40px;
   }
 }
 main .controls {
