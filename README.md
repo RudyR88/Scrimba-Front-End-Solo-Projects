@@ -20,9 +20,14 @@
  ## Module 4 - Essential CSS concepts
  *Level up CSS skills.*
  
- Oldagram: https://resilient-lollipop-ba77e5.netlify.app/
+ Oldagram: https://resilient-lollipop-ba77e5.netlify.app
  
  ## Module 5 - Essential Javascript concepts
  *Level up Javascript skills.*
  
- Restaurant ordering: https://dreamy-jalebi-d1b1c3.netlify.app/
+ Restaurant ordering: https://dreamy-jalebi-d1b1c3.netlify.app
+ 
+ ## Module 7 - Next-level Javascript
+ *Learn about modern js patterns.*
+ 
+ Tindog: https://capable-quokka-257ef8.netlify.app
