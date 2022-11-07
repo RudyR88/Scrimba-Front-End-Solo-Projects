@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--light-gradient);
+}
+
+h1, h2, h3, h4, p, a {
+  margin-top: 0;
+}
+
+.default-text {
+  color: var(--med-clr);
+  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 2vw, 2.25rem);
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --accent-clr: #FFE7EF;
+  --accent-clr2: #DBFFF4;
+  --light-clr: #fff;
+  --light-clr2: #f8f8f8;
+  --accent-clr3: #ff0000;
+  --med-clr: #B7B7B7;
+  --dark-clr: #252525;
+  --default-bs: 0px 10px 20px #E9E9EA;
+  --accent-bs: 0px 10px 20px #EDD9DF;
+  --accent-bs2: 0px 10px 20px #CCF1E6;
+  --light-gradient: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+  --dark-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -11.44%, rgba(0, 0, 0, 0) 39.97%);
+}
+
+.container {
+  width: min(95%, 50rem);
+  margin: 0 auto;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  padding: 1.25rem 1.4375rem;
+}
+header .icon {
+  width: 2.125rem;
+}
+header #logo {
+  width: 5.25rem;
+}
+header img {
+  cursor: pointer;
+  transition: filter 0.25s ease-in-out;
+}
+header img:hover {
+  filter: contrast(50%);
+}
+
+main #dogProfile__bg {
+  min-height: 46.9375rem;
+  position: relative;
+  border-radius: 15px;
+}
+@media (min-width: 56.25em) {
+  main #dogProfile__bg {
+    min-height: 53.1875rem;
+  }
+}
+main #dogProfile__bio {
+  position: absolute;
+  bottom: 16.44px;
+  left: 20.34px;
+}
+main #dogProfile__bio h1 {
+  color: var(--light-clr2);
+  margin-bottom: 0.451875rem;
+}
+main .endMessage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: var(--accent-clr3);
+  background-color: var(--accent-clr);
+  min-height: 46.9375rem;
+  border-radius: 15px;
+}
+@media (min-width: 56.25em) {
+  main .endMessage {
+    min-height: 53.1875rem;
+  }
+}
+main .descisionBadge {
+  position: absolute;
+  top: 55px;
+  left: 14px;
+  width: 14.619375rem;
+  transform: rotate(-30deg);
+}
+@media (min-width: 43.75em) {
+  main .descisionBadge {
+    top: 80px;
+    left: 45px;
+  }
+}
+main .controls {
+  margin: 1.5rem 0;
+}
+main .controls .round-btn {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--light-clr);
+  box-shadow: var(--default-bs);
+  transition: background-color 0.3s ease-in-out;
+}
+main .controls .round-btn__nope {
+  padding: 2.0625rem;
+}
+main .controls .round-btn__nope:hover, main .controls .round-btn__nope:focus {
+  background: var(--accent-clr);
+  box-shadow: var(--accent-bs);
+}
+main .controls .round-btn__like {
+  padding: 1.625rem;
+}
+main .controls .round-btn__like:hover, main .controls .round-btn__like:focus {
+  background-color: var(--accent-clr2);
+  box-shadow: var(--accent-bs2);
+}
+main .controls .round-btn #x-icon {
+  width: 1.6175rem;
+}
+main .controls .round-btn #heart-icon {
+  width: 2.55375rem;
+}
+main .controls .round-btn + .round-btn {
+  margin-left: 1.508125rem;
+}
+@media (min-width: 43.75em) {
+  main .controls .round-btn + .round-btn {
+    margin-left: 1.875rem;
+  }
+}/*# sourceMappingURL=style.css.map */

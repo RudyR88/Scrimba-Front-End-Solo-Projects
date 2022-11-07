@@ -1,0 +1,122 @@
+@forward './global';
+@forward './layout';
+@use './util' as u;
+
+header {
+    padding: u.toRem(20) u.toRem(23);
+    .icon {
+        width: u.toRem(34);
+    }
+
+    #logo {
+        width: u.toRem(84);
+    }
+
+    img {
+        cursor: pointer;
+        transition: filter .25s ease-in-out;
+    }
+
+    img:hover {
+        filter: contrast(50%);
+    }
+}
+
+main {
+    #dogProfile {
+        &__bg {
+            min-height: u.toRem(751);
+            position: relative;
+            border-radius: 15px;
+
+            @include u.breakpoint('large'){
+                min-height: u.toRem(851);
+            }
+        }
+
+        &__bio {
+            position: absolute;
+            bottom: 16.44px;
+            left: 20.34px;
+
+            h1 {
+                color: var(--light-clr2);
+                margin-bottom: u.toRem(7.23);
+            }
+        }
+    }
+
+    .endMessage {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: u.toRem(16);
+        color: var(--accent-clr3);
+        background-color: var(--accent-clr);
+        min-height: u.toRem(751);
+        border-radius: 15px;
+
+        @include u.breakpoint('large'){
+            min-height: u.toRem(851);
+        }
+    }
+
+    .descisionBadge {
+        position: absolute;
+        top: 55px;
+        left: 14px;
+        width: u.toRem(233.91);
+        transform: rotate(-30deg);
+
+        @include u.breakpoint('medium') {
+            top: 80px;
+            left: 45px;
+        }
+    }
+
+    .controls {
+        margin: u.toRem(24) 0;
+
+        .round-btn {
+            border: none;
+            border-radius: 50%;
+            background-color: var(--light-clr);
+            box-shadow: var(--default-bs);
+            transition: background-color .3s ease-in-out;
+
+            &__nope {
+                padding: u.toRem(33);
+
+                &:hover, &:focus {
+                    background: var(--accent-clr);
+                    box-shadow: var(--accent-bs);
+                }
+            }
+
+            &__like{
+                padding: u.toRem(26);
+
+                &:hover, &:focus {
+                    background-color: var(--accent-clr2);
+                    box-shadow: var(--accent-bs2);
+                }
+            }
+
+            #x-icon {
+                width: u.toRem(25.88);
+            }
+
+            #heart-icon {
+                width: u.toRem(40.86);
+            }
+        }
+
+        .round-btn + .round-btn {
+            margin-left: u.toRem(24.13);
+
+            @include u.breakpoint('medium') {
+                margin-left: u.toRem(30);
+            }
+        }
+    }
+}

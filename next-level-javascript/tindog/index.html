@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+    <script type="module" src="./js/main.js"></script>
+    <title>Tindog</title>
+</head>
+<body class="default-text">
+    <header>
+        <div class="flex-between container">
+            <img class="icon" src="./assets/images/icon-profile.png" alt="user profile icon">
+            <img id="logo" src="./assets/images/logo.png" alt="tindog logo">
+            <img class="icon" src="./assets/images/icon-chat.png" alt="messaging icon">
+        </div>
+    </header>
+    <main class="container">
+        <div id="dogProfile"></div>
+        <div class="endMessage"></div>
+        <div class="controls flex-center">
+            <button id="btn-nope" class="round-btn round-btn__nope" data-decision="nope"><img id="x-icon" src="./assets/images/icon-cross.png" alt="red x" data-decision="nope"></button>
+            <button id="btn-like" class="round-btn round-btn__like" data-decision="like"><img id="heart-icon" src="./assets/images/icon-heart.png" alt="green heart" data-decision="like"></button>
+        </div>
+    </main>
+</body>
+</html>
