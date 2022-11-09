@@ -31,3 +31,8 @@
  *Learn about modern js patterns.*
  
  Tindog: https://capable-quokka-257ef8.netlify.app
+ 
+ ## Module 9 - Working with APIs
+ *Learn to use APIs.*
+ 
+ Color Sheme Generator: https://fascinating-sundae-93cc4f.netlify.app
