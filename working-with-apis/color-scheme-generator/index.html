@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+    <script type="module" src="./js/main.js"></script>
+    <title>Color Scheme Generator</title>
+</head>
+<body class="flex-center">
+    <main class="container">
+        <div class="head flex-between-column">
+            <input type="color" id="clr-select" value="#F55A5A">
+            <div class="custom-select">
+                <select id="clr-type" class="select-text" aria-label="colors relation type">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+            </div>
+            <button class="btn btn__get-clrs" data-get-clrs="get-clrs">Get color scheme</button>
+        </div>
+        <div class="colors flex-between"></div>
+        <p id="copied-msg" class="msg"></p>
+    </main>
+</body>
+</html>

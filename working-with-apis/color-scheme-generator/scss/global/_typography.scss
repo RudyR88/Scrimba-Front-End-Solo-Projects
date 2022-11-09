@@ -1,0 +1,23 @@
+@use '../util' as u;
+
+h1, h2, h3, a, p {
+    margin-top: 0;
+}
+
+.select-text {
+    font-size: clamp(u.toRem(16), 2vw, u.toRem(21));
+    font-weight: 400;
+}
+
+.msg {
+    font-size: clamp(u.toRem(12), 2vw, u.toRem(17));
+    font-style: italic;
+    font-weight: 400;
+    margin: u.toRem(16);
+    text-align: center;
+    color: var(--med-clr);
+}
+
+.btn-text, .msg{
+    font-size: clamp(u.toRem(12), 2vw, u.toRem(17));
+}
