@@ -1,0 +1,25 @@
+@use '../util' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: var(--primary-ff);
+    font-weight: 400;
+    font-size: clamp(u.toRem(14), 2vw, u.toRem(19));
+    line-height: u.toRem(20);
+    color: var(--med-clr);
+    background-color: var(--dark-clr);
+    position: relative;
+}

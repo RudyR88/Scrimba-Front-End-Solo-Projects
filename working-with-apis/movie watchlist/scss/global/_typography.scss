@@ -1,0 +1,33 @@
+@use '../util' as u;
+
+h1, h2, h3, p, a {
+    margin-top: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: clamp(u.toRem(32), 2vw, u.toRem(42.79));
+    line-height: u.toRem(24);
+    letter-spacing: -0.045em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(u.toRem(18), 2vw, u.toRem(23));
+}
+
+h3 {
+    font-weight: 500;
+    font-size: clamp(u.toRem(18), 2vw, u.toRem(20));
+}
+
+a {
+    font-weight: 700;
+    font-size: clamp(u.toRem(14), 2vw, u.toRem(16));
+    transition: color .3s ease-in-out;
+}
+
+.search-text {
+    font-weight: 500;
+    font-size: clamp(u.toRem(14), 2vw, u.toRem(16));
+}

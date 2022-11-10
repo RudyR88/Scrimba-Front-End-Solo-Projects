@@ -1,0 +1,35 @@
+@use '../util' as u;
+
+.container {
+    width: min(95%, u.toRem(462));
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: u.toRem(99) auto;
+    grid-template-rows: auto;
+}

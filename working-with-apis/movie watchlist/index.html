@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+    <script type="module" src="./js/main.js"></script>
+    <title>Movie Watchlist | Home</title>
+</head>
+<body>
+    <header class="flex-center">
+        <div class="header-content flex-column container">
+            <h1>Find your film</h1>
+            <a href="./watchlist.html">My Watchlist</a>
+        </div>
+    </header>
+    <main class="container flex-center">
+        <div class="search container flex-center">
+            <div class="search__bar flex-center">
+                <i class="search__bar--icon fa-solid fa-magnifying-glass"></i>
+                <input class="search__bar--input search-text" type="text" placeholder="Search for movie...">
+            </div>
+            <button class="btn search__btn search-text" data-btn="search">Search</button>
+        </div>
+        <div class="movies"></div>
+        <div class="default flex-column">
+            <i class="fa-solid fa-film"></i>
+            <h2>Start exploring</h2>
+        </div>
+    </main>
+</body>
+</html>
