@@ -1,7 +1,7 @@
 @use '../util' as u;
 
 .container {
-    width: min(95%, u.toRem(462));
+    width: min(90%, u.toRem(800));
     margin: 0 auto;
 }
 
@@ -23,9 +23,9 @@
     justify-content: space-between;
 }
 
-.flex-evenly {
+.flex {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 .grid-col-2 {

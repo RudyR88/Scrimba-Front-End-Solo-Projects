@@ -53,7 +53,7 @@ main {
         }
 
         &__bar {
-            width: 85%;
+            width: 80%;
             padding: u.toRem(9) u.toRem(13);
 
             .fa-magnifying-glass {
@@ -73,7 +73,7 @@ main {
         }
 
         &__btn {
-            height: 100%;
+            width: 20%;
             padding: u.toRem(9) u.toRem(17) u.toRem(9) u.toRem(24.5);
 
             &:hover {
@@ -99,20 +99,28 @@ main {
         .movie {
             align-items: center;
             gap: u.toRem(21);
+            @include u.breakpoint('medium') {
+                grid-template-columns: 1fr 2fr;
+            }
 
             img {
-                width: u.toRem(99);
-                height: u.toRem(147.41);
+                max-width: u.toRem(99);
+                height: u.toRem(147);
+
+                @include u.breakpoint('medium'){
+                    min-width: 100%;
+                    object-fit: contain;
+                    height: u.toRem(200);
+                }
             }
 
             .movie__info--title {
-                align-items: baseline;
                 color: var(--light-clr);
+                align-items: baseline;
                 margin-bottom: u.toRem(11);
 
                 h3 {
                     margin-bottom: 0;
-                    word-wrap: break-word;
                 }
 
                 .fa-star {
@@ -121,15 +129,54 @@ main {
                 }
 
                 span {
-                    display: inline-block;
+                    display: block;
+                }
+
+                h3, .fa-star {
+                    margin-right: u.toRem(4);
                 }
             }
 
-            hr {
-                width: 100%;
-                border: 1.5px solid var(--hr-clr);
-                margin: u.toRem(20.59) 0 u.toRem(25) 0;
+            .movie__info--tags {
+                margin-bottom: u.toRem(8);
+                color: var(--light-clr);
+                word-wrap: break-word;
+                span {
+                    margin-right: u.toRem(18);
+                }
+
+                .fa-plus {
+                    padding: u.toRem(2);
+                    background-color: var(--light-clr);
+                    border-radius: 50%;
+                    margin-right: u.toRem(5);
+                    color: var(--dark-clr);
+                }
+
+                #btn-span {
+                    margin-right: 0;
+                }
             }
+        }
+
+        hr {
+            width: 100%;
+            border: 1.5px solid var(--hr-clr);
+            margin: u.toRem(20.59) 0 u.toRem(25) 0;
+
+            @include u.breakpoint('medium'){
+                width: 90%;
+                margin: u.toRem(20.59) auto u.toRem(25) auto;
+            }
+        }
+    }
+
+    .message {
+        text-align: center;
+
+        h4 {
+            width: u.toRem(321);
+            color: var(--med-clr3);
         }
     }
 }

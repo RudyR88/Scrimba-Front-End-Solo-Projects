@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     font-family: var(--primary-ff);
     font-weight: 400;
-    font-size: clamp(u.toRem(14), 2vw, u.toRem(19));
+    font-size: clamp(u.toRem(14), 2vw, u.toRem(17));
     line-height: u.toRem(20);
     color: var(--med-clr);
     background-color: var(--dark-clr);

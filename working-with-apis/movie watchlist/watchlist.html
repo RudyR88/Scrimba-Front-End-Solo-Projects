@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
     <title>Movie Watchlist | Watchlist</title>
 </head>
 <body>
-    
+    <header class="flex-center">
+        <div class="header-content flex-column container">
+            <h1>My Watchlist</h1>
+            <a href="./index.html">Search for movies</a>
+        </div>
+    </header>
+    <main class="container flex-center">
+        <div class="movies"></div>
+        <div class="default flex-column">
+            <h2>Your watchlist is looking a little empty...</h2>
+            <button class="round-btn">
+                <div class="flex">
+                    <i class="fa-solid fa-plus"></i> 
+                    <span id="btn-span">Let’s add some movies!</span>
+                </div>
+            </button>
+        </div>
+    </main>
 </body>
 </html>

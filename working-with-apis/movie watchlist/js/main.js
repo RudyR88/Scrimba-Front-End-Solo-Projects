@@ -1,9 +1,16 @@
 const searchEl = document.querySelector('.search__bar--input');
 const moviesEl = document.querySelector('.movies');
+const noResultsMessage = document.querySelector('.message');
+
+let watchlist = JSON.parse(localStorage.getItem('watchlist')) != null ? JSON.parse(localStorage.getItem('watchlist')) : [];
 
 document.addEventListener('click', (e)=>{
     if(e.target.dataset.btn === "search"){
         searchDB();
+    }
+
+    if(e.target.dataset.add){
+        addToWatchlist(e.target.dataset.add);
     }
 })
 
@@ -14,7 +21,9 @@ async function searchDB() {
         const data = await res.json();
         searchEl.value = '';
         document.querySelector('.default').style.display = 'none';
-        data.Response ? setMovieHTML(await getMovieData(data.Search)) : setErrorMsg();
+        moviesEl.style.display = 'block';
+        noResultsMessage.style.display = 'none';
+        data.Response === 'True' ? setMovieHTML(await getMovieData(data.Search)) : setErrorMsg();
     }
 }
 
@@ -24,19 +33,24 @@ function setMovieHTML(moviesArr){
         return `<div class='movie grid-col-2'>
             <img src='${poster}' alt='${title} poster'>
             <div class='movie__info'>
-                <div class='movie__info--title flex-between'>
+                <div class='movie__info--title flex'>
                     <h3>${title}</h3>
                     <i class="fa-solid fa-star"></i>
                     <span>${rating}</span>
                 </div>
-                <div class='movie__info--tags'>
+                <div class='movie__info--tags tag-text flex'>
                     <span>${runtime}</span>
                     <span>${genre}</span>
-                    <button class='round-btn' data-add=${id}><i class="fa-solid fa-plus"></i> Watchlist</button>
+                    <button class='round-btn'>
+                    <div class='flex' data-add='${id}'>
+                        <i class="fa-solid fa-plus" data-add='${id}'></i> 
+                        <span id='btn-span' data-add='${id}'>Watchlist</span>
+                    </div></button>
                 </div>
                 <p>${plot}</p>
             </div>
-        </div>`
+        </div>
+        <hr>`
     }).join("")
     moviesEl.innerHTML = moviesHTML;
 }
@@ -63,15 +77,18 @@ async function getAdditionalMovieData(movieImbid) {
     return movieData;
 }
 
-// function setDataHTML(moviesArr) {
-//     console.log(moviesArr);
-//     moviesEl.innerHTML = moviesArr.map(movie => `
-//         <div class='movie'>
-//             <img class='movie_poster' src='${movie.Poster}' alt='${movie.Title} poster'>
-//         </div>
-//     `).join('');
-// }
-
 function setErrorMsg(){
+    noResultsMessage.style.display = 'block';
+    moviesEl.style.display = 'none';
+    document.querySelector('.message').innerHTML = `
+    <h4>Unable to find what you're looking for. Please try another search.</h4>
+    `;
+}
 
+function addToWatchlist(movieID){
+    if(!watchlist.includes(movieID)){
+        watchlist.push(movieID);
+        localStorage.setItem('watchlist', JSON.stringify(watchlist));
+    }
+    console.log(JSON.parse(localStorage.getItem('watchlist')));
 }

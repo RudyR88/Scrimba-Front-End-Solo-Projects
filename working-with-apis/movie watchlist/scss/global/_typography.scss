@@ -1,6 +1,6 @@
 @use '../util' as u;
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
     margin-top: 0;
 }
 
@@ -12,13 +12,20 @@ h1 {
 }
 
 h2 {
-    font-weight: 700;
     font-size: clamp(u.toRem(18), 2vw, u.toRem(23));
 }
 
 h3 {
     font-weight: 500;
     font-size: clamp(u.toRem(18), 2vw, u.toRem(20));
+}
+
+h4 {
+    font-size: clamp(u.toRem(18), 2vw, u.toRem(19));
+}
+
+h2, h4 {
+    font-weight: 700;
 }
 
 a {
@@ -30,4 +37,8 @@ a {
 .search-text {
     font-weight: 500;
     font-size: clamp(u.toRem(14), 2vw, u.toRem(16));
+}
+
+.tag-text {
+    font-size: clamp(u.toRem(11), 2vw, u.toRem(12));
 }
