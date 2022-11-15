@@ -8,7 +8,8 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/watchlist.css">
+    <script type="module" src="./js/watchlist.js"></script>
     <title>Movie Watchlist | Watchlist</title>
 </head>
 <body>
@@ -22,12 +23,12 @@
         <div class="movies"></div>
         <div class="default flex-column">
             <h2>Your watchlist is looking a little empty...</h2>
-            <button class="round-btn">
+            <a href="./index.html" class="round-btn">
                 <div class="flex">
                     <i class="fa-solid fa-plus"></i> 
                     <span id="btn-span">Let’s add some movies!</span>
                 </div>
-            </button>
+            </a>
         </div>
     </main>
 </body>
