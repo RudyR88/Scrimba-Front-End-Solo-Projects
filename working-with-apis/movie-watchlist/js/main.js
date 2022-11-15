@@ -1,4 +1,5 @@
 import {getMovieData} from './util.js';
+import {API_KEY} from './apikey.js';
 
 const searchEl = document.querySelector('.search__bar--input');
 const moviesEl = document.querySelector('.movies');
@@ -32,7 +33,7 @@ async function searchDB(){
     movieResults = "";
     const searchFor = searchEl.value;
     if(searchFor){
-        const res = await fetch(`http://www.omdbapi.com/?apikey=e93095ab&s=${searchFor}`);
+        const res = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchFor}`);
         const data = await res.json();
         searchEl.value = '';
         document.querySelector('.default').style.display = 'none';

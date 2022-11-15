@@ -1,7 +1,9 @@
-let watchlist = JSON.parse(localStorage.getItem('watchlist'));
+import {API_KEY} from './apikey.js';
 
 const defaultEl = document.querySelector('.default');
 const moviesEl = document.querySelector('.movies');
+
+let watchlist = JSON.parse(localStorage.getItem('watchlist'));
 
 document.addEventListener('click', (e)=>{
     if(e.target.dataset.remove){
@@ -11,7 +13,7 @@ document.addEventListener('click', (e)=>{
 })
 
 async function searchMovie(movieID){
-    const res = await fetch(`http://www.omdbapi.com/?apikey=e93095ab&i=${movieID}`);
+    const res = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${movieID}`);
     return await res.json();   
 }
 
