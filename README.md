@@ -36,3 +36,5 @@
  *Learn to use APIs.*
  
  Color Sheme Generator: https://fascinating-sundae-93cc4f.netlify.app
+ 
+ Movie Watchlist: https://cosmic-macaron-38f73a.netlify.app
