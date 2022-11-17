@@ -1,0 +1,9 @@
+@forward './global';
+@forward './layout';
+@use './util' as u;
+
+.App {
+    background-color: var(--dark-clr3);
+    min-height: u.toRem(780);
+    border-radius: 10px;
+}

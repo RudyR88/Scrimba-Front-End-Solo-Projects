@@ -1,0 +1,41 @@
+.info {
+  margin-bottom: 2.0625rem;
+}
+.info img {
+  max-width: 100%;
+  height: 19.8125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  pointer-events: none;
+}
+.info address {
+  font-style: normal;
+}
+.info address h2 {
+  margin: 1.3125rem 0 0.386875rem 0;
+  color: var(--light-clr);
+}
+.info address .subtitle {
+  display: block;
+  margin-bottom: 0.550625rem;
+  line-height: 0.968125rem;
+  color: var(--accent-clr2);
+}
+.info address #website-link {
+  margin-bottom: 0.9375rem;
+  color: var(--light-clr2);
+  transition: color 0.3s ease-in-out;
+}
+.info address #website-link:hover, .info address #website-link:active, .info address #website-link:focus {
+  color: var(--accent-clr);
+}
+.info address #website-link:focus {
+  outline: none;
+}
+.info address a {
+  text-decoration: none;
+}
+.info address .link-btns {
+  width: 100%;
+}/*# sourceMappingURL=Info.css.map */

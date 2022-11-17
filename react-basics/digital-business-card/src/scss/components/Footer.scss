@@ -1,0 +1,29 @@
+@use '../util' as u;
+
+footer {
+    padding: u.toRem(19) 0 u.toRem(20);
+    background-color: var(--dark-clr5);
+    border-radius: 0px 0px 10px 10px;
+
+    a + a {
+        margin-left: u.toRem(23.5);
+    }
+
+    a {
+        transition: color .3s ease-in-out;
+        outline: none;
+
+        &:hover, &:active, &:focus {
+            .fa-brands {
+                color: var(--accent-clr);
+            }
+        }
+    }
+
+
+    .fa-brands {
+        font-size: u.toRem(25);
+        color: var(--med-clr2);
+        transition: color .3s ease-in-out; 
+    }
+}

@@ -1,0 +1,20 @@
+footer {
+  padding: 1.1875rem 0 1.25rem;
+  background-color: var(--dark-clr5);
+  border-radius: 0px 0px 10px 10px;
+}
+footer a + a {
+  margin-left: 1.46875rem;
+}
+footer a {
+  transition: color 0.3s ease-in-out;
+  outline: none;
+}
+footer a:hover .fa-brands, footer a:active .fa-brands, footer a:focus .fa-brands {
+  color: var(--accent-clr);
+}
+footer .fa-brands {
+  font-size: 1.5625rem;
+  color: var(--med-clr2);
+  transition: color 0.3s ease-in-out;
+}/*# sourceMappingURL=Footer.css.map */

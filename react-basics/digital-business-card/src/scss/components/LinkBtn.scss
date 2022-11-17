@@ -1,0 +1,7 @@
+ @use '../util' as u;
+ 
+ a {
+    .icon {
+        margin-right: u.toRem(9.6);
+    }
+ }

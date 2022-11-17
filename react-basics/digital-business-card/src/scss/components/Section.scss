@@ -1,0 +1,12 @@
+@use '../util' as u;
+
+.section {
+    h3 {
+        color: var(--light-clr2);
+        margin-bottom: u.toRem(5);
+    }
+
+    p {
+        margin-bottom: u.toRem(27);
+    }
+}
