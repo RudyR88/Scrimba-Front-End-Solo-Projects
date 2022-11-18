@@ -38,3 +38,10 @@
  Color Sheme Generator: https://fascinating-sundae-93cc4f.netlify.app
  
  Movie Watchlist: https://cosmic-macaron-38f73a.netlify.app
+ 
+ ## Module 11 - React basics
+ *Learn the most popular library for building user interfaces. This will increase your productivity by an order of magnitude.*
+ 
+ Digital Business Card: https://gorgeous-pixie-1aaa87.netlify.app
+ 
+ My Travel List: https://magenta-pony-4e8e48.netlify.app
