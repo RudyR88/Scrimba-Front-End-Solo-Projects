@@ -1,0 +1,12 @@
+header {
+  padding: 1rem 0;
+  background-color: var(--accent-clr);
+  color: var(--light-clr);
+}
+header i {
+  font-size: 1.5rem;
+  margin-right: 0.4375rem;
+}
+header h1 {
+  margin-bottom: 0;
+}/*# sourceMappingURL=Header.css.map */

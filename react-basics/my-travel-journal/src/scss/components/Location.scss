@@ -1,0 +1,61 @@
+@use '../util' as u;
+
+.place {
+    gap: u.toRem(19);
+
+    img {
+        min-width: u.toRem(125);
+        width: 25%;
+        @include u.breakpoint('medium'){
+            width: 35%;
+        }
+        height: u.toRem(168);
+        object-fit: cover;
+        border-radius: 5px;
+        pointer-events: none;
+    }
+    
+    .location-info {
+        width: 75%;
+
+        @include u.breakpoint('medium'){
+            width: 65%;
+        }
+        &__location {
+            margin-bottom: u.toRem(4);
+            .fa-location-dot {
+                color: var(--accent-clr);
+                font-size: u.toRem(9.55);
+                margin-right: u.toRem(4);
+            }
+            span {
+                line-height: u.toRem(12.39);
+                letter-spacing: 0.17em;
+                margin-right: u.toRem(12);
+            }
+            a {
+                color: var(--med-clr);
+                transition: color .3s ease-in-out;
+
+                &:hover, &:active, &:focus {
+                    color: var(--accent-clr);
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: u.toRem(7);
+    }
+
+    .date {
+        display: block;
+        font-weight: 700;
+        line-height: u.toRem(12.39);
+        margin-bottom: u.toRem(9);
+    }
+}

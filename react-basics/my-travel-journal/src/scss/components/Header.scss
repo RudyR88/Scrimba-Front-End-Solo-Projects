@@ -1,0 +1,16 @@
+@use '../util' as u;
+
+header {
+    padding: u.toRem(16) 0;
+    background-color: var(--accent-clr);
+    color: var(--light-clr);
+    
+    i{
+        font-size: u.toRem(24);
+        margin-right: u.toRem(7);
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+}

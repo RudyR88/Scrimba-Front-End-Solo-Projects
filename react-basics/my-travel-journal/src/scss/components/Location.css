@@ -1,0 +1,57 @@
+.place {
+  gap: 1.1875rem;
+}
+.place img {
+  min-width: 7.8125rem;
+  width: 25%;
+  height: 10.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  pointer-events: none;
+}
+@media (min-width: 43.75em) {
+  .place img {
+    width: 35%;
+  }
+}
+.place .location-info {
+  width: 75%;
+}
+@media (min-width: 43.75em) {
+  .place .location-info {
+    width: 65%;
+  }
+}
+.place .location-info__location {
+  margin-bottom: 0.25rem;
+}
+.place .location-info__location .fa-location-dot {
+  color: var(--accent-clr);
+  font-size: 0.596875rem;
+  margin-right: 0.25rem;
+}
+.place .location-info__location span {
+  line-height: 0.774375rem;
+  letter-spacing: 0.17em;
+  margin-right: 0.75rem;
+}
+.place .location-info__location a {
+  color: var(--med-clr);
+  transition: color 0.3s ease-in-out;
+}
+.place .location-info__location a:hover, .place .location-info__location a:active, .place .location-info__location a:focus {
+  color: var(--accent-clr);
+}
+.place .location-info__location a:focus {
+  outline: none;
+}
+.place h2 {
+  margin-bottom: 0.4375rem;
+}
+.place .date {
+  display: block;
+  font-weight: 700;
+  line-height: 0.774375rem;
+  margin-bottom: 0.5625rem;
+}/*# sourceMappingURL=Location.css.map */

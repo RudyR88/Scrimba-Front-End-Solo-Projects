@@ -1,0 +1,12 @@
+@use '../util' as u;
+
+.locations {
+    width: min(90%, u.toRem(800));
+    margin: u.toRem(100) auto 0 auto;
+}
+
+hr {
+    color: var(--light-clr2);
+    border: 1px solid var(--light-clr2);
+    margin: u.toRem(18) 0;
+}

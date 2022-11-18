@@ -1,0 +1,10 @@
+.locations {
+  width: min(90%, 50rem);
+  margin: 6.25rem auto 0 auto;
+}
+
+hr {
+  color: var(--light-clr2);
+  border: 1px solid var(--light-clr2);
+  margin: 1.125rem 0;
+}/*# sourceMappingURL=Locations.css.map */
