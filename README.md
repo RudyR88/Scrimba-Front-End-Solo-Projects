@@ -11,7 +11,7 @@
  ## Module 3 - Making websites interactive
  *Combine HTML, CSS and Javascript into interactive websites.*
  
- Dolphin Counter:  https://spiffy-travesseiro-ca6c91.netlify.app
+ Dolphin Counter:  https://dolphincounter.netlify.app/
  
  Password Generator: https://grand-sprite-b6b7ae.netlify.app
  
