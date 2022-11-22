@@ -1,0 +1,34 @@
+@use '../util' as u;
+
+.btn {
+    cursor: pointer;
+    width: u.toRem(193);
+    padding: u.toRem(16) u.toRem(28);
+    border: solid 2px var(--accent-clr);
+    border-radius: 15px;
+    background: transparent;
+    color: var(--accent-clr);
+    transition: background-color, transform .3s ease-in-out;
+
+    &:hover, &:active, &:focus {
+        background-color: var(--accent-clr);
+        transform: scale(1.1);
+        color: var(--dark-clr);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__answer {
+        width: u.toRem(150);
+        color: var(--light-clr);
+        padding: u.toRem(4) u.toRem(19);
+        transition: background-color .3s ease-in-out;
+
+        &:hover, &:active, &:focus {
+            color: var(--light-clr);
+            transform: none;
+        }
+    }
+}

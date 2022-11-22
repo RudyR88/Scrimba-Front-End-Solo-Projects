@@ -1,0 +1,7 @@
+@use '../util' as u;
+
+.question {
+    h3 {
+        margin-bottom: u.toRem(12);
+    }
+}

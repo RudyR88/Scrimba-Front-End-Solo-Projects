@@ -1,0 +1,30 @@
+@use '../util' as u;
+
+h1, h2, h3, h4, a, p, span {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(u.toRem(31.25), 2vw, u.toRem(34.25));
+    line-height: u.toRem(37);
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h1, h3 {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+h2, h3, .btn-text {
+    font-size: clamp(u.toRem(16), 2vw, u.toRem(19));
+    line-height: u.toRem(19);
+}
+
+p {
+    font-weight: 700;
+    font-size: clamp(u.toRem(12.8), 2vw, u.toRem(15.8));
+    line-height: u.toRem(15);
+}

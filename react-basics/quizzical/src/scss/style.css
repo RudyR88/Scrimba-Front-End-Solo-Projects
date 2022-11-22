@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: clamp(0.64rem, 2vw, 0.8275rem);
+  line-height: 0.75rem;
+  color: var(--light-clr);
+  background: var(--trivia-bg);
+}
+
+.btn {
+  cursor: pointer;
+  width: 12.0625rem;
+  padding: 1rem 1.75rem;
+  border: solid 2px var(--accent-clr);
+  border-radius: 15px;
+  background: transparent;
+  color: var(--accent-clr);
+  transition: background-color, transform 0.3s ease-in-out;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background-color: var(--accent-clr);
+  transform: scale(1.1);
+  color: var(--dark-clr);
+}
+.btn:focus {
+  outline: none;
+}
+.btn__answer {
+  width: 9.375rem;
+  color: var(--light-clr);
+  padding: 0.25rem 1.1875rem;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn__answer:hover, .btn__answer:active, .btn__answer:focus {
+  color: var(--light-clr);
+  transform: none;
+}
+
+h1, h2, h3, h4, a, p, span {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(1.953125rem, 2vw, 2.140625rem);
+  line-height: 2.3125rem;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h1, h3 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+
+h2, h3, .btn-text {
+  font-size: clamp(1rem, 2vw, 1.1875rem);
+  line-height: 1.1875rem;
+}
+
+p {
+  font-weight: 700;
+  font-size: clamp(0.8rem, 2vw, 0.9875rem);
+  line-height: 0.9375rem;
+}
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Karla", sans-serif;
+  --light-clr: #eeeceb;
+  --accent-clr: #BD5532;
+  --dark-clr: #000;
+  --gradient-clr: rgba(0, 0, 0, .6);
+  --trivia-bg: linear-gradient(var(--gradient-clr), var(--gradient-clr)), url("./assets/images/trivia-bg.jpg") center/cover no-repeat;
+}
+
+.container {
+  width: min(90%, 62.5rem);
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-col-2 {
+  text-align: center;
+  display: grid;
+  gap: 0.8125rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  align-items: center;
+}
+@media (min-width: 37.5em) {
+  .grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+@media (min-width: 43.75em) {
+  .grid-col-2 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

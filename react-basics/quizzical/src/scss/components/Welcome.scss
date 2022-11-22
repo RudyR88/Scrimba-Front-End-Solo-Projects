@@ -1,0 +1,12 @@
+@use '../util' as u;
+
+.welcome {
+    text-align: center;
+    h1 {
+        margin-bottom: u.toRem(7);
+    }
+
+    h2 {
+        margin-bottom: u.toRem(29);
+    }
+}
