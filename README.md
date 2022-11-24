@@ -1,7 +1,7 @@
 # Scrimba Solo Projects
  *Solo projects from Scrimba's front end developer career path: https://scrimba.com/learn/frontend*
  
- **All projects made responsive with SASS.**
+ **All projects made responsive with SASS. Not all modules have solo projects.**
  
  ## Module 2 - Web dev basics
  *Learn the basics of HTML and CSS.*
