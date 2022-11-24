@@ -45,3 +45,5 @@
  Digital Business Card: https://gorgeous-pixie-1aaa87.netlify.app
  
  My Travel List: https://magenta-pony-4e8e48.netlify.app
+ 
+ Quizzical: https://quizzical-7372ba.netlify.app/
