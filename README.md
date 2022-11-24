@@ -6,12 +6,45 @@
  ## Module 2 - Web dev basics
  *Learn the basics of HTML and CSS.*
  
- Hometown Homepage: https://hometownhomepage-a5ccb0.netlify.app
+ Hometown Homepage: https://hometownhomepage-a5ccb0.netlify.app 
  
+ Code: [project folder](https://github.com/RudyR88/Scrimba-Front-End-Solo-Projects/tree/main/web-dev-basics/hometown-homepage)
+ 
+ **Requirements:**
+ - [x] Built it from "scratch"
+ - [x] Use Classes, Flexbox, Background-images and color palette
+ 
+ **Strech goals:**
+ - [x] Make it your own
+ - [x] Use different color palette
+ - [x] Add a Google Font
+ - [x] Find a way to use :hover
+ 
+ <p align="center">
+  <a href="https://hometownhomepage-a5ccb0.netlify.app" target="_blank">
+   <img src="https://user-images.githubusercontent.com/116358345/203685088-4ab67e04-e2f9-4c25-b3ea-4e4f6c04d1cf.png" style="width:45%;"/>
+  </a>
+ </p>
+
+
+
  ## Module 3 - Making websites interactive
  *Combine HTML, CSS and Javascript into interactive websites.*
  
  Dolphin Counter:  https://dolphincounter.netlify.app
+ 
+ **Requirements:**
+ - [x] Make it your own
+ - [x] Use background image
+ - [x] Use a Google Font
+ - [x] Button Effects
+ - [x] Add max width
+ 
+ <p align="center">
+  <a href="https://dolphincounter.netlify.app" target="_blank">
+   <img src="https://user-images.githubusercontent.com/116358345/203691737-fc9f379d-aa18-4771-a390-8aec96938823.png" style="width:45%;"/>
+  </a>
+ </p>
  
  Password Generator: https://passwordgenerator-b6b7ae.netlify.app
  
